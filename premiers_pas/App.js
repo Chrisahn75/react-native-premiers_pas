@@ -17,8 +17,7 @@ export default function App() {
     setShowLoading(false);
   };
   return showLoading ? (
-    <ScrollView >
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <View style={styles.container1}>
           <Text style={styles.text1}>Text 1</Text>
           <StatusBar style='auto'/>
@@ -36,11 +35,9 @@ export default function App() {
           </TouchableOpacity>
           <ActivityIndicator></ActivityIndicator>
         </View>
-      </View>
-    </ScrollView>
+      </ScrollView>
   ) : (
-    <ScrollView >
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <View style={styles.container1}>
           <Text style={styles.text1}>Text 1</Text>
           <StatusBar style='auto'/>
@@ -58,16 +55,13 @@ export default function App() {
           </TouchableOpacity>
           <ActivityIndicator></ActivityIndicator>
         </View>
-      </View>
-    </ScrollView>
+      </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: 'blue',
-    justifyContent:'center',
   },
   container1: {
     backgroundColor: 'white',
